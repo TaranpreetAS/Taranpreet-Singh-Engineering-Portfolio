@@ -1,0 +1,382 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taranpreet Singh | Engineering Portfolio</title>
+
+<style>
+
+/* ---------- Global ---------- */
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Arial, sans-serif;
+line-height:1.6;
+color:#111;
+}
+
+/* ---------- Navigation ---------- */
+
+nav{
+width:100%;
+position:fixed;
+top:0;
+padding:1rem 2rem;
+background:rgba(255,255,255,0.95);
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ddd;
+z-index:100;
+}
+
+nav a{
+text-decoration:none;
+margin:0 1rem;
+color:#111;
+font-weight:bold;
+font-size:0.9rem;
+}
+
+nav a:hover{color:#0077ff;}
+
+/* ---------- Hero ---------- */
+
+#hero{
+height:100vh;
+background:linear-gradient(135deg,#0d1b2a,#1b263b);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:start;
+padding:0 3rem;
+}
+
+#hero h1{
+font-size:3rem;
+margin-bottom:1rem;
+}
+
+#hero p{
+font-size:1.15rem;
+max-width:700px;
+}
+
+#hero .btn{
+margin-top:2rem;
+padding:0.85rem 1.75rem;
+background:#0077ff;
+color:white;
+font-weight:bold;
+text-decoration:none;
+border-radius:5px;
+transition:0.3s;
+}
+
+#hero .btn:hover{background:#005fcc;}
+
+/* ---------- Sections ---------- */
+
+section{
+padding:4rem 3rem;
+scroll-margin-top:80px;
+}
+
+.header-section{
+font-size:2rem;
+font-weight:bold;
+margin-bottom:1rem;
+border-bottom:4px solid #0077ff;
+display:inline-block;
+}
+
+/* ---------- Cards ---------- */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:2rem;
+margin-top:2rem;
+}
+
+.card{
+background:#f9f9f9;
+padding:1.5rem;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3{
+font-size:1.25rem;
+margin-bottom:0.8rem;
+}
+
+/* ---------- CAD Gallery ---------- */
+
+.cad-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin-top:2rem;
+}
+
+.cad-item{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+.cad-item img{
+width:100%;
+display:block;
+transition:transform 0.5s ease;
+}
+
+.cad-overlay{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background:rgba(13,27,42,0.92);
+color:white;
+padding:1.5rem;
+transform:translateY(100%);
+transition:transform 0.4s ease;
+}
+
+.cad-item:hover img{
+transform:scale(1.05);
+}
+
+.cad-item:hover .cad-overlay{
+transform:translateY(0);
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+background:#0d1b2a;
+color:#cbd5f5;
+text-align:center;
+padding:2rem;
+font-size:0.9rem;
+}
+
+footer a{
+color:#0077ff;
+text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+<div><strong>Taranpreet Singh</strong></div>
+
+<div>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#cad">CAD</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+
+<!-- Hero -->
+
+<section id="hero">
+
+<h1>Hi — I’m Taranpreet Singh</h1>
+
+<p>
+Mechanical / Aerospace engineering and Physics student specializing in CAD design,
+system dynamics, and engineering project leadership.
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</section>
+
+
+<!-- About -->
+
+<section id="about">
+
+<div class="header-section">About Me</div>
+
+<p>
+Engineering and Physics Dual Degree with deep academic experience in mechanics, thermodynamics, and fluid dynamics.
+I have extensive hands-on experience in SolidWorks, MATLAB,
+mechanical design, and multidisciplinary engineering teams.
+I focus on turning concepts into manufacturable mechanical systems having a strong foundation in engineering principles and a passion for learning.
+Beyond schoolwork, I am an avid climber, reader, and participate in events such as hosting Science Olympiad at UMass.
+</p>
+
+</section>
+
+
+<!-- Projects -->
+
+<section id="projects">
+
+<div class="header-section">Featured Projects</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>ASME Iam3D Chassis & Locomotion Lead</h3>
+
+<p>
+Led a team of six engineers designing a terrain-capable chassis capable
+of excavating heavy objects in sandy environments while maintaining
+strict weight and size constraints.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Collegiate Wind Competition</h3>
+
+<p>
+Designed turbine nacelle and hub assemblies and manufactured structural
+components including shaft and base plate for wind tunnel testing.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Turbofan Jet Engine Design</h3>
+
+<p>
+Personal engineering project modeling a complete turbofan engine
+assembly in SolidWorks to better understand turbomachinery architecture
+and airflow systems.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CAD SECTION -->
+
+<section id="cad">
+
+<div class="header-section">SolidWorks CAD Showcase</div>
+
+<p>
+Selected CAD models and assemblies designed using SolidWorks.
+Hover over each model to see project details.
+</p>
+
+
+<div class="cad-gallery">
+
+
+<div class="cad-item">
+
+<img src="images/Final_Assembly.png">
+
+<div class="cad-overlay">
+
+<h3>Iam3D Excavator Assembly</h3>
+
+<p>
+Full Assembly of Excavator with parts that will be 3D printed for the ASME Iam3D competition. Designed to be within a 30 cm cube, the assembly 
+includes 4 motors, 4 wheels, a custom bearing design for the rotating arm, and a custom bucket design for excavation.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="cad-item">
+
+<img src="images/TurboFan_Engine_Assembly.PNG">
+
+<div class="cad-overlay">
+
+<h3>Turbofan Engine Assembly</h3>
+
+<p>
+Partial turbofan architecture designed in SolidWorks. Current progress includes the Turbofan section, low pressure compressor, and partial 
+completion of the high pressure compressor. The design is based off a standard Turbofan engine architecture, with a focus on
+understanding the internal components and their intereactions. The design is still a work in progress, with the remaining components 
+to be completed in the coming months.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="cad-item">
+
+<img src="images/WindTurbine_FullAssembly.PNG">
+
+<div class="cad-overlay">
+
+<h3>Wind Turbine Assembly</h3>
+
+<p>
+Full wind turbine assembly designed for the Collegiate Wind Competition. The assembly includes the nacelle, hub, shaft, and base plate.
+The design was focused on manufacturability and ease of assembly, with a focus on structural integrity and performance in wind tunnel testing. 
+The rotor blades were created using software such as Qblade, and imported into SolidWorks.The design was completed in SolidWorks and manufactured 
+using a combination of 3D printing, resin printing, and CNC machining.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- Contact -->
+
+<section id="contact">
+
+<div class="header-section">Contact</div>
+
+<p>
+Email: taranpreetsingh05@outlook.com
+<br><br>
+
+LinkedIn:
+<a href="https://linkedin.com/in/taranpreet-singh">
+linkedin.com/in/taranpreet-singh
+</a>
+</p>
+
+</section>
+
+
+<footer>
+
+© 2026 Taranpreet Singh • Engineering Portfolio
+
+</footer>
+
+</body>
+</html>
+```
